@@ -33,6 +33,39 @@ h1, h2, h3, h4, h5, h6 {
   height: auto;
 }
 
+/* @media (prefers-color-scheme: dark) {
+  img {
+    opacity: .75;
+    transition: opacity .5s ease-in-out;
+  }
+  img:hover {
+    opacity: 1;
+  }
+} */
+
+/* html {
+  --text-color-normal: #0a244d;
+  --text-color-light: #8cabd9;
+}
+
+html[data-theme='dark'] {
+  --text-color-normal: hsl(210, 10%, 62%);
+  --text-color-light: hsl(210, 15%, 35%);
+  --text-color-richer: hsl(210, 50%, 72%);
+  --text-color-highlight: hsl(25, 70%, 45%);
+} */
+
+body {
+  background-color: #121212;
+  color: white;
+}
+@media screen and (prefers-color-scheme: light) {
+  body {
+    background-color: white;
+    color: black;
+  }
+}
+
 .main-logo{
   /* height: 00px; */
   height: auto;
@@ -210,6 +243,8 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
   white-space: nowrap;
   transition: 0.3s;
+  opacity: 0.8;
+
 }
 .navbar a i, .navbar a:focus i {
   font-size: 12px;
@@ -218,6 +253,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 .navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
   color: #E50914;
+}
+
+#abouttext{
+  opacity: 0.6;
 }
 .navbar .dropdown ul {
   display: block;
@@ -518,6 +557,11 @@ section {
   font-size: 28px;
   font-family: "Poppins", sans-serif;
 }
+
+.text{
+  opacity: 0.8;
+
+}
 .about .content ul {
   list-style: none;
   padding: 0;
@@ -612,12 +656,13 @@ section {
 
 .services .icon-box {
   text-align: center;
-  border: 1px solid #ebebeb;
+  border: 1px solid #272727;
   padding: 80px 20px;
   /* transition: all ease-in-out 0.3s; */
-  background: #fff;
+  background: #272727;
   height: 400px;
   width: 500px;
+  
 }
 .services .icon-box .icon {
   margin: 0 auto;
@@ -639,10 +684,12 @@ section {
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 24px;
+  opacity: 0.6;
 }
 .services .icon-box h4 a {
-  color: #151515;
+  /* color: #151515; */
   /* transition: ease-in-out 0.3s; */
+  
 }
 .services .icon-box h4 a:hover {
   color: #E50914;
@@ -653,7 +700,7 @@ section {
   margin-bottom: 0;
 }
 .services .icon-box:hover {
-  border-color: #fff;
+  /* border-color: #fff; */
   box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
   transform: translateY(-10px);
 }
@@ -1128,9 +1175,13 @@ section {
 }
 .contact .php-email-form {
   width: 100%;
-  background: #fff;
+  background: #272727;
   padding: 30px;
-
+}
+#name, #email, #subject, #msg{
+  background-color: white;
+  opacity: 0.7;
+  border: none;
 }
 .contact .php-email-form .form-group {
   padding-bottom: 8px;
@@ -1180,6 +1231,7 @@ section {
 }
 .contact .php-email-form input:focus, .contact .php-email-form textarea:focus {
   border-color: #E50914;
+
 }
 .contact .php-email-form input {
   height: 44px;
@@ -1191,9 +1243,11 @@ section {
   background: #ed3c0d;
   border: 0;
   padding: 10px 24px;
-  color: #151515;
+  /* color: #151515; */
   transition: 0.4s;
   border-radius: 4px;
+  color: white;
+  opacity: 0.8;
 }
 .contact .php-email-form button[type=submit]:hover {
   background: #ed3c0d;
@@ -1223,6 +1277,7 @@ section {
   background: whitesmoke;
   min-height: 40px;
   margin-top: 74px;
+  /* #272727 */
 }
 .breadcrumbs h2 {
   font-size: 28px;
@@ -1283,6 +1338,8 @@ section {
   line-height: 1;
   font-weight: 700;
   text-transform: uppercase;
+  opacity: 0.8;
+
 }
 #footer .footer-top .footer-info h3 span {
   color: #ffc451;
@@ -1293,6 +1350,8 @@ section {
   margin-bottom: 0;
   font-family: "Raleway", sans-serif;
   color: #fff;
+  opacity: 0.8;
+
 }
 #footer .footer-top .social-links a {
   font-size: 18px;
@@ -1307,6 +1366,7 @@ section {
   width: 36px;
   height: 36px;
   transition: 0.3s;
+
 }
 #footer .footer-top .social-links a:hover {
   background: #ffc451;
@@ -1322,6 +1382,8 @@ section {
 }
 #footer .footer-top .footer-links {
   margin-bottom: 30px;
+  opacity: 0.8;
+
 }
 #footer .footer-top .footer-links ul {
   list-style: none;
@@ -1341,12 +1403,16 @@ section {
 }
 #footer .footer-top .footer-links ul li:first-child {
   padding-top: 0;
+  /* opacity: 0.1; */
+
 }
 #footer .footer-top .footer-links ul a {
   color: #fff;
   transition: 0.3s;
   display: inline-block;
   line-height: 1;
+  opacity: 0.6;
+
 }
 #footer .footer-top .footer-links ul a:hover {
   color: #E50914;
@@ -1383,4 +1449,5 @@ section {
 #footer .copyright {
   text-align: center;
   padding-top: 30px;
+  opacity: 0.6;
 }
