@@ -34,7 +34,23 @@
       }
     }
   }
-
+  // var images = [
+  //   "banner jetpack hero 2.png",
+  //   "./assets/img/banner/banner jetpack hero 2.png",
+  //   "./assets/img/banner/banner jetpack hero 2.png",
+  //   "./assets/img/banner/banner jetpack hero 2.png"
+  // ]
+  
+  // var imageHead = document.getElementById("hero");
+  // var i = 0;
+  
+  // setInterval(function() {
+  //       imageHead.style.backgroundImage = "url(" + images[i] + ")";
+  //       i = i + 1;
+  //       if (i == images.length) {
+  //         i =  0;
+  //       }
+  // }, 500);
   /**
    * Easy on scroll event listener 
    */
@@ -155,7 +171,6 @@
       }
     }
   });
-
   /**
    * Preloader
    */
@@ -273,6 +288,7 @@
       clickable: true
     }
   });
+  
 
   /**
    * Animation on scroll

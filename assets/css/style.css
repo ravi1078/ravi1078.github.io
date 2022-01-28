@@ -29,7 +29,16 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
 }
 
+.logomain{
+  height: auto;
+}
 
+.main-logo{
+  /* height: 00px; */
+  height: auto;
+  width: 20%;
+  /* width: 300px; */
+}
 
 /*--------------------------------------------------------------
 # Back to top button
@@ -142,7 +151,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #E50914;
 }
 #header .logo a span {
-  color: #ffc451;
+  /* color: #ffc451; */
 }
 #header .logo img {
   max-height: 40px;
@@ -321,7 +330,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
   color: #151515;
-  background-color: #ffc451;
+  background-color: #E50914;
 }
 .navbar-mobile .getstarted, .navbar-mobile .getstarted:focus {
   margin: 15px;
@@ -357,13 +366,30 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
+.img{
+  height: auto;
+  width: 100%;
+  display: flex;
+  background-size: cover;
+  /* object-fit: cover; */
+  /* position: absolute; */
+  /* top: 0;
+  left: 0;
+  right: 0; */
+  /* top: 0; */
+  margin-top: -60px;
+  margin-bottom: -60px;
+}
+
 #hero {
   width: 100%;
-  height: 100vh;
-  background: url("../img/6.jpg") top center;
-  background-size: cover;
+  /* height: 100vh; */
+  /* background: url("../img/6.jpg") top center; */
+  /* background: top center;
+  background-size: cover; */
   position: relative;
   top: -60;
+  /* height: 90vh; */
 }
 #hero:before {
   content: "";
@@ -377,7 +403,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero .container {
   position: relative;
   padding-top: 74px;
-  text-align: center;
+  /* text-align: center; */
 }
 #hero h1 {
   margin: 0;
@@ -392,20 +418,20 @@ h1, h2, h3, h4, h5, h6 {
 }
 #hero h2 {
   color: rgba(255, 255, 255, 0.9);
-  margin: 10px 0 0 0;
+  /* margin: 10px 0 0 0; */
   font-size: 24px;
 }
 #hero .icon-box {
-  padding: 30px 20px;
+  /* padding: 30px 20px; */
   transition: ease-in-out 0.3s;
   border: 1px solid rgba(255, 255, 255, 0.3);
-  height: 100%;
-  text-align: center;
+  /* height: 100%; */
+  /* text-align: center; */
 }
 #hero .icon-box img {
   font-size: 32px;
   line-height: 1;
-  color: #ffc451;
+  /* color: #ffc451; */
 }
 #hero .icon-box h3 {
   font-weight: 700;
@@ -590,11 +616,13 @@ section {
   padding: 80px 20px;
   /* transition: all ease-in-out 0.3s; */
   background: #fff;
+  height: 400px;
+  width: 500px;
 }
 .services .icon-box .icon {
   margin: 0 auto;
-  width: 150px;
-  height: 150px;
+  width: 180px;
+  height: 180px;
   /* background: #ffc451; */
   border-radius: 4px;
   display: flex;
