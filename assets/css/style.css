@@ -423,6 +423,10 @@ body {
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
+#imgslide{
+  opacity: 0.6;
+}
+
 .img {
   height: auto;
   /* width: 100%; */
@@ -695,6 +699,9 @@ section {
   
 }
 
+#servicesimg{
+  opacity: 0.8;
+}
 
 .services{
   /* background: red; */
