@@ -422,7 +422,7 @@ body {
 
 #hero {
   width: 100%;
-  /* height: 100vh; */
+  height: 80vh;
   /* background: url("../img/6.jpg") top center; */
   /* background: top center;
   background-size: cover; */
@@ -611,7 +611,7 @@ section {
 .clients .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
-  background-color: red;
+  /* background-color: red; */
   opacity: 1;
   background-color: #ddd;
 }
@@ -650,20 +650,82 @@ section {
   min-height: 400px;
 }
 
+
+
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
 
+.rowdata{
+  display: grid;
+  /* grid-template-columns: auto auto auto; */
+  grid-template-columns:1fr 1fr 0.5fr;
+  /* background-color: red;   */
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+
+
+
 .services .icon-box {
   text-align: center;
   border: 1px solid #272727;
-  padding: 80px 20px;
+  /* padding: 80px 20px; */
   /* transition: all ease-in-out 0.3s; */
+  padding-top: 14px;
+  /* padding-bottom: 0px; */
   background: #272727;
-  height: 400px;
-  width: 500px;
-  
+  height: 260px;
+  width: 300px;
+  margin-top: 15px;
 }
+@media only screen and (max-width: 768px) {
+
+.services .icon-box {
+   
+  /* height: auto; */
+  width: 100%;
+  /* margin-right: 20px; */
+
+}
+.rowdata{
+grid-template-columns: auto auto;
+grid-gap: 2vmin;
+}
+
+}
+
+@media only screen and (max-width: 400px) {
+
+  .services .icon-box {
+     
+    /* height: auto; */
+    /* width: 80%; */
+    /* margin-right: 20px; */
+    padding-top: 10px;
+  
+  }
+  .rowdata{
+  /* grid-template-columns: auto auto;
+  grid-gap: 1vmin; */
+  display: block;
+  }
+  
+  }
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 992px) {
+  .rowdata{
+    display: grid;
+    /* grid-template-columns: auto auto auto; */
+    grid-template-columns:1fr 0.5fr;
+    /* background-color: red;   */
+    /* padding-top: 10px;
+    padding-bottom: 10px; */
+  }
+
+}
+
 .services .icon-box .icon {
   margin: 0 auto;
   width: 180px;
@@ -683,7 +745,7 @@ section {
 .services .icon-box h4 {
   font-weight: 700;
   margin-bottom: 15px;
-  font-size: 24px;
+  font-size: 16px;
   opacity: 0.6;
 }
 .services .icon-box h4 a {

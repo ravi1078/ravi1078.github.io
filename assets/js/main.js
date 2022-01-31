@@ -34,6 +34,8 @@
       }
     }
   }
+
+  
   // var images = [
   //   "banner jetpack hero 2.png",
   //   "./assets/img/banner/banner jetpack hero 2.png",
