@@ -78,6 +78,12 @@ body {
   /* width: 300px; */
 }
 
+#main{
+  /* display: flex; */
+  /* width: 100%;
+  margin: 0px; */
+}
+
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -681,7 +687,30 @@ section {
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
+.rowdata {
+  /* width: 200px;
+  height: 400px; */
+   /* background: red; */
 
+}
+.rowdata::-webkit-scrollbar {
+   width: 0px;
+   display: none;
+}
+
+
+.rowdata::-webkit-scrollbar-track {
+   /* -webkit-box-shadow: inset 0 0 6px #272727; 
+   border-radius: 10px; */
+   box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+
+.rowdata::-webkit-scrollbar-thumb {
+   border-radius: 10px;
+   -webkit-box-shadow: inset 0 0 6px red; 
+   /* background: red; */
+}
 .rowdata {
   display: grid;
   grid-template-columns: auto auto auto auto;
@@ -690,8 +719,30 @@ section {
   /* padding-top: 10px;
   padding-bottom: 10px; */
   /* grid-row-gap: -10px; */
-  grid-column-gap: 5px;
-  width: 80%;
+  grid-column-gap: 30px;
+  /* width: 80%; */
+  overflow: scroll;
+  width: 100%;
+  height: 635px;
+}
+
+.rowdata1 {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  /* grid-template-columns: 1fr 1fr 0.5fr; */
+  /* background-color: red;   */
+  /* padding-top: 10px;
+  padding-bottom: 10px; */
+  /* grid-row-gap: -10px; */
+  grid-column-gap: 40px;
+  width: 100%;
+  /* overflow: scroll; */
+  /* width: 100%; */
+  /* height: 635px; */
+}
+
+.servicesdiv{
+/* padding-left: 80px; */
 }
 
 .mySlides{
@@ -710,6 +761,14 @@ section {
   margin-right: 10px;
 }
 
+#main1{
+display: flex;
+flex-direction: column;
+justify-content: center;
+/* align-items: center; */
+padding-left: 10px;
+}
+
 .services .icon-box {
   text-align: center;
   border: 1px solid #272727;
@@ -725,48 +784,118 @@ section {
 @media only screen and (max-width: 768px) {
   .services .icon-box {
     /* height: auto; */
-    width: 100%;
+    /* width: 100%; */
     /* margin-right: 20px; */
   }
   .rowdata {
     grid-template-columns: auto auto;
     grid-gap: 2vmin;
     width: 100%;
-
+  }
+  .rowdata1 {
+    grid-template-columns: auto auto;
+    grid-gap: 2vmin;
+    width: 100%;
   }
   .services{
     /* background: red; */
   
     margin-right: 0px;
   }
+  #main1{
+    padding-left: 0px;
+  }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 535px) {
   .services .icon-box {
     /* height: auto; */
     /* width: 80%; */
     /* margin-right: 20px; */
     padding-top: 10px;
+    /* width: 100%; */
+    width: 100%;
   }
   .rowdata {
     /* grid-template-columns: auto auto;
   grid-gap: 1vmin; */
     display: block;
+    width: 100%;
 
+  }
+
+  .rowdata1 {
+    /* grid-template-columns: auto auto;
+  grid-gap: 1vmin; */
+    display: block;
+
+  }
+  #main1{
+    padding-left: 0px;
   }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1072px) {
+/* @media only screen and (min-device-width: 400px) and (max-width: 600px) {
+  .services .icon-box {
+    
+    height: 180px;
+    width: 210px;
+  }
+} */
+
+@media only screen and (min-device-width: 992px) and (max-device-width: 1200px) {
   .rowdata {
     display: grid;
-    grid-template-columns: auto auto auto;
-    width: 90%;
+    grid-template-columns: auto auto auto auto ;
+    /* width: 1200px; */
     /* grid-template-columns: 0.5fr 1fr; */
     /* background-color: red;   */
     /* padding-top: 10px;
     padding-bottom: 10px; */
+    column-gap: 0px;
+    /* overflow: hidden; */
+  }
+  .rowdata1 {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    /* width: 970px; */
+    column-gap: 0px;
+  }
+  .services .icon-box {
+    /* height: auto; */
+    width: 100%;
+  
   }
 }
+
+@media only screen and (min-device-width: 1400px){
+  #main1{
+    padding-left: 60px;
+  }
+}
+
+  @media only screen and (min-device-width: 768px) and (max-device-width: 992px) {
+    .rowdata {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      /* width: 920px; */
+      column-gap: 0px;
+    }
+    .rowdata1 {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      /* width: 970px; */
+      column-gap: 0px;
+    }
+    .services .icon-box {
+    
+      height: 210px;
+      width: 230px;
+    }
+  }
+  
+
+
 
 .services .icon-box .icon {
   margin: 0 auto;
@@ -1292,6 +1421,7 @@ section {
   width: 100%;
   background: #272727;
   padding: 30px;
+  /* display: flex; */
 }
 #name,
 #email,
