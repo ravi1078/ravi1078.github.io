@@ -1693,7 +1693,7 @@ margin-top: -79px;
   margin-bottom: 30px;
   opacity: 0.8;
   margin-top: -8px;
-  margin-left: 90px;
+  /* margin-left: 90px; */
 }
 #footer .footer-top .footer-links ul {
   list-style: none;
@@ -1779,7 +1779,7 @@ margin-top: -79px;
 @media only screen and (max-width: 1200px) {
 
 #footer .footer-top .footer-links {
-  margin-left: 230px;
+  /* margin-left: 230px; */
 }
 
 }
