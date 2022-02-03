@@ -1643,7 +1643,7 @@ margin-top: -79px;
 #footer .footer-top .footer-info {
   margin-bottom: 30px;
 }
-#footer .footer-top .footer-info h3 {
+#contact .footer-info h3 {
   font-size: 16px;
   margin: 0 0 20px 0;
   padding: 2px 0 2px 0;
@@ -1655,7 +1655,7 @@ margin-top: -79px;
 #footer .footer-top .footer-info h3 span {
   color: #ffc451;
 }
-#footer .footer-top .footer-info p {
+#contact .footer-info p {
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 0;
@@ -1693,7 +1693,7 @@ margin-top: -79px;
   margin-bottom: 30px;
   opacity: 0.8;
   margin-top: -8px;
-  margin-left: 270px;
+  margin-left: 90px;
 }
 #footer .footer-top .footer-links ul {
   list-style: none;
