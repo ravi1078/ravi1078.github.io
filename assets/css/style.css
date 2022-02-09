@@ -276,7 +276,14 @@ body {
 
 #abouttext {
   opacity: 0.6;
+  text-align: justify;
 }
+
+#aboutimg{
+  height: 230px;
+  width: 100%;
+}
+
 .navbar .dropdown ul {
   display: block;
   position: absolute;
